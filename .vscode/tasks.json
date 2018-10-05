@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "platformio",
+            "args": [
+                "run",
+                "--verbose"
+            ],
+            "problemMatcher": [
+                "$platformio"
+            ],
+            "label": "PlatformIO: Verbose Build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "command": "platformio",
+            "args": [
+                "run",
+                "-t",
+                "upload",
+                "-v"
+            ],
+            "problemMatcher": [
+                "$platformio"
+            ],
+            "label": "PlatformIO: Upload"
+        }
+    ]
+}
